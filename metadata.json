@@ -1,0 +1,7 @@
+{
+  "name": "Aura Athletics",
+  "description": "High-performance conditioning laboratory and athletic sanctuary fusing biometric telemetry, Olympic-certified coaching, and elite recovery sciences.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

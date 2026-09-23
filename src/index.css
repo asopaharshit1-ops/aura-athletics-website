@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "Space Grotesk", monospace;
+
+  --color-aura-bg: #111317;
+  --color-aura-lowest: #0c0e11;
+  --color-aura-low: #1a1c1f;
+  --color-aura-card: #1e2023;
+  --color-aura-high: #282a2d;
+  --color-aura-highest: #333538;
+  --color-aura-volt: #caf300;
+  --color-aura-volt-bright: #d4ff00;
+  --color-aura-volt-dark: #2a3400;
+  --color-aura-text: #e2e2e6;
+  --color-aura-muted: #94a3b8;
+  --color-aura-cyan: #38bdf8;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #111317;
+    color: #e2e2e6;
+    font-family: "Inter", sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-display, .font-headline {
+    font-family: "Space Grotesk", sans-serif;
+  }
+}
+
+/* Custom scrollbars & glow effects */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0e11;
+}
+::-webkit-scrollbar-thumb {
+  background: #282a2d;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333538;
+}
+
+.glow-volt {
+  box-shadow: 0 0 24px -4px rgba(202, 243, 0, 0.35);
+}
+
+.glow-volt-subtle {
+  box-shadow: 0 0 20px -6px rgba(202, 243, 0, 0.15);
+}
+
+.border-volt-subtle {
+  border-color: rgba(202, 243, 0, 0.25);
+}
